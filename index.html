@@ -398,6 +398,47 @@
                     <use href="./img/icons.svg#close"></use>
                 </svg>
             </button>
+            <form class="contact-form">
+                <p class="modal-description">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="contact-form-field">
+                    <span class="contact-form-name">Имя</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_name" type="text" class="contact-form-input" required>
+                        <svg class="modal-input-icon" width="12" height="12">
+                            <use href="./img/icons.svg#name"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-name">Телефон</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_phone" type="tel" class="contact-form-input" required>
+                        <svg class="modal-input-icon" width="13" height="13">
+                            <use href="./img/icons.svg#phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-name">Почта</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user_email" type="email" class="contact-form-input" required>
+                        <svg class="modal-input-icon" width="15" height="12">
+                            <use href="./img/icons.svg#modal-mail"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-name">Комментарий</span>
+                    <span>
+                        <textarea name="user_massage" class="contact-form-input contact-form-massage" placeholder="Введите текст"></textarea>
+                    </span>
+                    <div class="contact-form-checkbox-wrapper">
+                        <input name="accept-window" type="checkbox" class="contact-form-checkbox" required>
+                        <label for="" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    </div>
+                </label>
+                <button type="submit" class="contact-form-submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
