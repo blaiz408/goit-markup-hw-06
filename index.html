@@ -357,7 +357,7 @@
                 </address>
             </div>
             <div class="footer-item">
-                <h3 class="social-links-tittle third-rate-tittle">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <h3 class="social-links-tittle third-rate-tittle">Присоединяйтесь</h3>
                 <ul class="social-list footer-social-list list">
                     <li class="social-list-item">
                         <a href="" class="social-list-link footer-social-link link" target="_blank" rel="noreferrer noopener">
@@ -388,6 +388,22 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-item subscribe-footer-item">
+                <h3 class="subscribe-tittle social-links-tittle third-rate-tittle">Подпишитесь на рассылку</h3>
+                <div class="subscribe-item">
+                    <form class="email-form">
+                        <label class="email-form-field">
+                            <input name="user_email" type="email" class="email-form-input" placeholder="E-mail">
+                        </label>
+                        <button type="submit" class="subscribe-submit modal-button">
+                            Подписаться
+                            <svg class="telegram-icon" width="24" height="24">
+                                <use href="./img/icons.svg#telegram"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -429,15 +445,24 @@
                 </label>
                 <label class="contact-form-field">
                     <span class="contact-form-name">Комментарий</span>
-                    <span>
+                    <span class="contact-form-input-wrapper">
                         <textarea name="user_massage" class="contact-form-input contact-form-massage" placeholder="Введите текст"></textarea>
                     </span>
-                    <div class="contact-form-checkbox-wrapper">
-                        <input name="accept-window" type="checkbox" class="contact-form-checkbox" required>
-                        <label for="" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                    </div>
                 </label>
-                <button type="submit" class="contact-form-submit">Отправить</button>
+                <div class="contact-form-checkbox-wrapper">
+                    <input name="accept-window" type="checkbox" class="contact-form-checkbox visually-hidden" id="accept-checkbox"
+                        required>
+                    <label for="accept-checkbox" class="contact-form-checkbox-label">
+                        <span class="checkbox-window">
+                        <svg class="checkbox-icon" width="11px" height="8px">
+                            <use href="./img/icons.svg#accept"></use>
+                        </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю&nbsp;
+                        <a href=""class="accept-link link">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="contact-form-submit modal-button">Отправить</button>
             </form>
         </div>
     </div>
