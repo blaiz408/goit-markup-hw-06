@@ -406,9 +406,8 @@ address {
 .subscribe-footer-item {
   margin-left: auto;
 }
-.subscribe-item {
+.email-form {
   display: flex;
-  align-items: center;
 }
 .email-form-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
