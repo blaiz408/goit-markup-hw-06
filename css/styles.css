@@ -646,14 +646,16 @@ address {
   margin-left: 15px;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--transition);
 }
-.accept-link {
+.condition-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
 .contact-form-checkbox:focus + label>.checkbox-window {
   outline: 1px solid var(--secondary-text-color-theme-light);
 }
+
 .contact-form-checkbox:checked + label>.checkbox-window {
   background-color: var(--accent-color);
   border-color: transparent;
