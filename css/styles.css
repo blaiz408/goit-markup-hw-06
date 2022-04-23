@@ -235,7 +235,11 @@ address {
   color: var(--primary-text-color-theme-dark);
 }
 .modal-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 10px 32px;
   border: none;
@@ -250,8 +254,13 @@ address {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  min-width: 200px;
+  transition: background-color var(--transition);
 }
-
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #188CE8;
+}
 /* ADVANTAGES */
 .advantages {
   padding-bottom: 0;
@@ -373,7 +382,6 @@ address {
   margin-bottom: 9px;
 }
 
-
 .address-place:hover,
 .address-place:focus {
   color: var(--accent-color);
@@ -403,11 +411,14 @@ address {
 .footer-social-list .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
-.subscribe-footer-item {
+.footer-item:last-child {
   margin-left: auto;
 }
 .email-form {
   display: flex;
+}
+.email-form-field {
+  margin-right: 12px;
 }
 .email-form-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -422,10 +433,7 @@ address {
   line-height: 1.25;
   color: var(--primary-text-color-theme-dark);
 }
-.subscribe-submit {
-  display: flex;
-  margin-left: 12px;
-}
+
 .telegram-icon {
   margin-left: 10px;
 }
@@ -567,6 +575,10 @@ address {
   padding: 0;
   cursor: pointer;
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border-color: #212121;
+}
 
 .modal-description{
   font-weight: 700;
@@ -574,6 +586,7 @@ address {
   line-height: 1.15;
   text-align: center;
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 12px;
 }
 .contact-form-name {
   font-size: 12px;
@@ -588,13 +601,18 @@ address {
   position: relative;
 }
 
+.contact-form-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+.comment-form-field {
+  margin-bottom: 20px;
+}
 .contact-form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   transition: border-color var(--transition);
   cursor: pointer;
@@ -630,6 +648,7 @@ address {
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
+  line-height: 1;
 }
 .contact-form-checkbox-wrapper {
   margin-bottom: 30px;
@@ -660,9 +679,4 @@ address {
   background-color: var(--accent-color);
   border-color: transparent;
 }
-.contact-form-submit {
-  display: flex;
-  padding: 10px 55px;
-  margin: 0 auto;
-  background-color: #188CE8;
-}
+
