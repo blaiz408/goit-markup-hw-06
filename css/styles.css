@@ -552,7 +552,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 580px;
+  min-height: 580px;
   background-color: #ffffff;
   transition: transform 500ms linear;
   padding: 40px;
@@ -575,9 +575,12 @@ address {
   padding: 0;
   cursor: pointer;
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: #212121;
+.modal-close-icon {
+  transition: fill var(--transition);
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
 
 .modal-description{
@@ -596,6 +599,7 @@ address {
 
 .contact-form-field {
   display: block;
+  margin-bottom: 10px;
 }
 .contact-form-input-wrapper {
   position: relative;
